@@ -11,14 +11,16 @@ This demo includes two applications: a web app that we serve through Snowpack, a
 
 The demo should look as depicted below:
 
-## https://websocket.org/_astro/ws-cursor-demo.7f469a5a_2wqBgm.webp
+![image](https://github.com/user-attachments/assets/943c1fd9-60ea-47f1-b160-91ef2b5ac85d)
+
 Realtime cursor movement powered by the ws WebSockets libraryFigure 4.1: Realtime cursor movement powered by the ws WebSockets library
 
 However, if you are running the demo in a browser that does not support WebSockets (e.g., IE9 or below), or if you are restricted by particularly tight corporate proxies, you will get an error saying that the browser can’t establish a connection:
 
 Error message returned by the browser when a WebSocket connection can't be establishedFigure 4.2: Error message returned by the browser when a WebSocket connection can’t be established
 
-## https://websocket.org/_astro/websocket-error.9e7649a8_1Fj1JB.webp
+![image](https://github.com/user-attachments/assets/bc4a6d14-9e06-4791-a375-459c4e00b929)
+
 This is because the ws library offers no fallback transfer protocols if WebSockets are unavailable. If this is a requirement for your project, or you want to have a higher level of reliability of delivery for your messages, then you will need a library that offers multiple transfer protocols, such as SockJS.
 
 ## SockJS — a JavaScript library to provide WebSocket-like communication
@@ -88,7 +90,8 @@ This demo includes two applications: a web app that we serve through Snowpack, a
 
 The demo should look as depicted below:
 
-https://websocket.org/_astro/sockjs-cursor-demo.26c2ae1d_1OtSGy.webp
+![image](https://github.com/user-attachments/assets/0f2b9b1d-8666-4bbd-aac5-4f75bf39eb0e)
+
 Realtime cursor movement powered by the SockJS WebSockets libraryFigure 4.3: Realtime cursor movement powered by the SockJS WebSockets library
 
 ## Scaling the web app
