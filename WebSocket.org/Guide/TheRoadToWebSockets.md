@@ -61,8 +61,8 @@ JavaScript to bind everything together.
 It’s worth emphasizing the importance of XMLHttpRequest, a built-in browser object that allows you to make HTTP requests in JavaScript. The concept behind XHR was initially created at Microsoft and included in Internet Explorer 5, in 1999. In just a few years, XMLHttpRequest would benefit from widespread adoption, being implemented by Mozilla Firefox, Safari, Opera, and other browsers.
 
 Let’s now look at how AJAX works, by comparing it to the classic model of building a web app.
-https://websocket.org/_astro/how-ajax-works.f030a959_1037l0.webp
-How AJAX works
+![image](https://github.com/user-attachments/assets/5a827716-e73a-46a3-a804-52b37aa30dd8)
+
 
 In a classic model, most user actions in the UI trigger an HTTP request sent to the server. The server processes the request and returns the entire HTML page to the client. In comparison, AJAX introduces an intermediary (an AJAX engine) between the user and the server. Although it might seem counterintuitive, the intermediary significantly improves responsiveness. Instead of loading the webpage, at the start of the session, the client loads the AJAX engine, which is responsible for:
 
@@ -79,7 +79,8 @@ Several different techniques can be used to deliver the Comet model, the most we
 
 ## Long polling
 Essentially a more efficient form of polling, long polling is a technique where the server elects to hold a client’s connection open for as long as possible, delivering a response only after data becomes available or a timeout threshold is reached. Upon receipt of the server response, the client usually issues another request immediately. Long polling is often implemented on the back of XMLHttpRequest, the same object that plays a key role in the AJAX model.
-https://websocket.org/_astro/long-polling.d7000adb_Vn4A9.webp
+![image](https://github.com/user-attachments/assets/919ee331-1608-4f57-b4e9-c5366dc2393d)
+
 High-level overview of long polling
 
 ## HTTP streaming
@@ -154,7 +155,8 @@ In 2008, the pain and limitations of using Comet when implementing anything rese
 
 In a nutshell, WebSocket is a technology that enables bidirectional, full-duplex communication between client and server over a persistent, single-socket connection. The intent is to provide what is essentially an as-close-to-raw-as-possible TCP communication layer to web application developers while adding a few abstractions to eliminate certain friction that would otherwise exist concerning the way the web works. A WebSocket connection starts as an HTTP request/response handshake; beyond this handshake, WebSocket and HTTP are fundamentally different.
 
-https://websocket.org/_astro/websocket-vs-http.be03ced1_sWP4f.webp
+![image](https://github.com/user-attachments/assets/23f28ff0-9642-401c-b8f7-0d20739a04ba)
+
 WebSockets vs. the traditional HTTP request/response model
 
 The WebSocket technology includes two core building blocks:
