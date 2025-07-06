@@ -21,6 +21,8 @@ The WebSocket URI schemes are analogous to the HTTP ones; the wss scheme uses th
 
 The rest of the WebSocket URI follows a generic syntax, similar to HTTP. It consists of several components: host, port, path, and query, as highlighted in the example below.
 
+![image](https://github.com/user-attachments/assets/4f544c7e-82e9-463c-8581-ceb69a454ba2)
+
 WebSocket URI components
 
 It’s worth mentioning that:
@@ -32,7 +34,7 @@ The hash character (#) must be escaped as %23.
 ## Opening handshake
 The process of establishing a WebSocket connection is known as the opening handshake, and consists of an HTTP/1.1 request/response exchange between the client and the server. The client issues a WebSocket handshake request, which is just a specially formatted HTTP GET request. The server, if it supports the WebSocket protocol and is willing to establish a connection with the client, responds with a WebSocket handshake response.
 
-## https://websocket.org/_astro/websocket-uri.3cb10103_KwPP7.webp
+![image](https://github.com/user-attachments/assets/3ff2c0c5-c279-4673-b96c-34086942196c)
 
 WebSocket Opening Handshake
 
@@ -84,7 +86,8 @@ The base framing protocol breaks down a frame into the following components:
 
 ## WebSocket Frame Structure
 
-## https://websocket.org/_astro/websocket-frame.372d5320_7VjIW.webp
+![image](https://github.com/user-attachments/assets/753d2cc1-b684-4d7e-8d95-d1ea402a3a26)
+
 FIN bit - indicates whether this is the final fragment in a message (1) or not (0).
 RSV1, RSV2, RSV3 bits - reserved for extensions; must be 0 unless an extension is negotiated.
 Opcode (4 bits) - indicates the type of frame:
@@ -119,7 +122,8 @@ Close frames (opcode 0x8) are used to initiate the closing handshake, which indi
 The closing handshake is initiated when either the client or server sends a close frame. The peer that receives the close frame should send back another close frame in response. After sending a close frame, the peer should not send any more data frames. After both sides have exchanged close frames, the TCP connection is closed.
 
 WebSocket Closing Handshake
-https://websocket.org/_astro/websocket-close.13b24b5c_1is8Jq.webp
+![image](https://github.com/user-attachments/assets/ea69a033-e62f-48ae-ae50-37b811f37945)
+
 A close frame may contain a status code and a reason for closing in its payload. The status code is a 16-bit unsigned integer. Some of the most common status codes are:
 
 1000: Normal closure
